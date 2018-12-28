@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.railapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Indian Railways"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".pnrStatus"
+            android:label="PNR Status Check"
+            android:parentActivityName="com.example.android.railapp.MainActivity" />
+        <activity android:name=".spotTrains"
+            android:label="Train Status"
+            android:parentActivityName="com.example.android.railapp.MainActivity" />
+        <activity android:name=".findTrains"
+            android:label="Trains Between Stations"
+            android:parentActivityName="com.example.android.railapp.MainActivity" />
+        <activity android:name=".ticketPenality"
+            android:label="Without Ticket?"
+            android:parentActivityName="com.example.android.railapp.MainActivity" />
+        <activity android:name=".availableSeats"
+            android:label="Seat Availability"
+            android:parentActivityName="com.example.android.railapp.MainActivity" />
+
+        <activity android:name=".trainRoute"
+            android:label="Train Route"
+            android:parentActivityName="com.example.android.railapp.MainActivity" />
+    </application>
+</manifest>
